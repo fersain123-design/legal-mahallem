@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mahallem - Yasal Metinler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --logo-green: #0E4F37;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f5f7fa;
+    }
+
+    .header {
+      background: var(--logo-green);
+      color: white;
+      padding: 17px 48px 48px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-frame {
+      background: #ffffff;
+      padding: 8px;
+      border-radius: 24px;
+      display: inline-flex;
+      margin-bottom: 12px;
+    }
+
+    .logo {
+      width: 102px;
+      display: block;
+      height: auto;
+      border-radius: 18px;
+    }
+
+    .header h1 {
+      margin: 4px 0 0;
+      line-height: 1.1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .button-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: transparent;
+      padding: 0;
+    }
+
+    .toggle-btn {
+      border: none;
+      background: #0F6B4A;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      scroll-margin-top: 90px;
+    }
+
+    .card.hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="logo-frame">
+    <img src="logo.png?v=3" class="logo" alt="Mahallem Logo">
+  </div>
+  <h1>Mahallem</h1>
+</div>
+
+<div class="container">
+
+<div class="button-bar">
+  <button class="toggle-btn" data-target="kullanim-kosullari" onclick="toggleSection('kullanim-kosullari')">Kullanım Koşulları</button>
+  <button class="toggle-btn" data-target="gizlilik-politikasi" onclick="toggleSection('gizlilik-politikasi')">Gizlilik Politikası</button>
+  <button class="toggle-btn" data-target="kvkk-aydinlatma" onclick="toggleSection('kvkk-aydinlatma')">KVKK</button>
+  <button class="toggle-btn" data-target="satici-sozlesmesi" onclick="toggleSection('satici-sozlesmesi')">Satıcı Sözleşmesi</button>
+  <button class="toggle-btn" data-target="iletisim" onclick="toggleSection('iletisim')">İletişim</button>
+</div>
+
+<div class="card" id="kullanim-kosullari">
+<h2>Kullanım Koşulları</h2>
+<h3>1. Taraflar</h3>
+<p>Bu uygulama ("Mahallem"), Ferhat Şahin tarafından sunulmaktadır.</p>
+
+<h3>2. Hizmet Tanımı</h3>
+<p>Mahallem uygulaması, kullanıcıların bulundukları konumdaki yerel esnaflardan ürün ve hizmet siparişi vermelerini sağlayan bir platformdur.</p>
+
+<h3>3. Kullanıcı Yükümlülükleri</h3>
+<p>Kullanıcı, uygulamayı yalnızca hukuka uygun amaçlarla kullanacağını kabul eder. Yanıltıcı, sahte, başkasına ait bilgilerle işlem yapmak yasaktır.</p>
+
+<h3>4. Hesap Güvenliği</h3>
+<p>Kullanıcı, hesap bilgilerinin güvenliğinden kendisi sorumludur. Google ile giriş yapan kullanıcılar, ilgili hesabın güvenliğinden sorumludur.</p>
+
+<h3>5. Sipariş ve Hizmet Sorumluluğu</h3>
+<p>Uygulama üzerinden verilen siparişlerde ürün ve hizmetin sorumluluğu ilgili esnafa aittir. Mahallem, yalnızca aracı platformdur.</p>
+
+<h3>6. Ödeme</h3>
+<p>Uygulama üzerinden kapıda ödeme ve online ödeme seçenekleri sunulabilir. Online ödemelerde üçüncü taraf ödeme altyapıları kullanılabilir.</p>
+
+<h3>7. Hizmet Değişiklikleri</h3>
+<p>Mahallem, uygulama üzerinde değişiklik yapma hakkını saklı tutar.</p>
+
+<h3>8. Hesap Askıya Alma</h3>
+<p>Kurallara aykırı kullanım durumunda kullanıcı hesapları askıya alınabilir veya silinebilir.</p>
+</div>
+
+<div class="card hidden" id="gizlilik-politikasi">
+<h2>Gizlilik Politikası</h2>
+<h3>1. Veri Sorumlusu</h3>
+<p>Bu gizlilik politikası kapsamında veri sorumlusu Ferhat Şahin'dir.<br>İletişim: info@mahallem.live</p>
+
+<h3>2. Toplanan Veriler</h3>
+<ul>
+  <li>Ad ve soyad</li>
+  <li>Telefon numarası</li>
+  <li>Konum bilgisi</li>
+  <li>Sipariş ve işlem geçmişi</li>
+  <li>Cihaz bilgileri ve uygulama kullanım verileri</li>
+</ul>
+
+<h3>3. Veri Kullanım Amaçları</h3>
+<p>Toplanan veriler aşağıdaki amaçlarla kullanılmaktadır:</p>
+<ul>
+  <li>Siparişlerin oluşturulması ve teslimi</li>
+  <li>Kullanıcı deneyiminin iyileştirilmesi</li>
+  <li>Hizmetlerin geliştirilmesi</li>
+</ul>
+
+<h3>4. Üçüncü Taraf Hizmetler</h3>
+<p>Uygulamada aşağıdaki hizmetler kullanılabilir:</p>
+<ul>
+  <li>Google (giriş ve harita hizmetleri)</li>
+  <li>Ödeme altyapı sağlayıcıları</li>
+  <li>Sunucu ve veri hizmetleri (örn. Supabase)</li>
+</ul>
+<p>Bu hizmetler kapsamında gerekli veriler paylaşılabilir.</p>
+
+<h3>5. Veri Güvenliği</h3>
+<p>Kişisel veriler güvenli sunucularda saklanır ve yetkisiz erişime karşı korunur.</p>
+
+<h3>6. Veri Saklama Süresi</h3>
+<p>Veriler, hizmet süresi boyunca ve yasal yükümlülükler gereği gerekli süre kadar saklanır.</p>
+
+<h3>7. Kullanıcı Hakları</h3>
+<p>Kullanıcılar, verilerine ilişkin bilgi talep etme, düzeltme ve silme haklarına sahiptir.</p>
+<p>Talepler için: info@mahallem.live</p>
+</div>
+
+<div class="card hidden" id="kvkk-aydinlatma">
+<h2>KVKK Aydınlatma Metni</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında, veri sorumlusu sıfatıyla Ferhat Şahin olarak kişisel verileriniz işlenmektedir.</p>
+
+<h3>1. İşlenen Kişisel Veriler</h3>
+<ul>
+  <li>Kimlik bilgileri (ad, soyad)</li>
+  <li>İletişim bilgileri (telefon)</li>
+  <li>Konum verisi</li>
+  <li>Sipariş ve işlem bilgileri</li>
+  <li>Kullanım ve cihaz verileri</li>
+</ul>
+
+<h3>2. İşleme Amaçları</h3>
+<ul>
+  <li>Sipariş süreçlerinin yürütülmesi</li>
+  <li>Hizmetlerin sunulması</li>
+  <li>Kullanıcı deneyiminin iyileştirilmesi</li>
+</ul>
+
+<h3>3. Hukuki Sebep</h3>
+<p>Verileriniz KVKK'nın 5. maddesi kapsamında işlenmektedir.</p>
+
+<h3>4. Veri Aktarımı</h3>
+<p>Veriler, hizmetin sağlanması amacıyla aşağıdaki taraflarla paylaşılabilir:</p>
+<ul>
+  <li>Esnaflarla</li>
+  <li>Kurye hizmetleriyle</li>
+  <li>Ödeme sistemleriyle</li>
+  <li>Teknik altyapı sağlayıcılarıyla</li>
+</ul>
+
+<h3>5. Haklarınız</h3>
+<p>KVKK'nın 11. maddesi kapsamında aşağıdaki haklara sahipsiniz:</p>
+<ul>
+  <li>Verilerinizi öğrenme</li>
+  <li>Düzeltme</li>
+  <li>Silinmesini talep etme</li>
+</ul>
+<p>Başvuru için: info@mahallem.live</p>
+</div>
+
+<div class="card hidden" id="satici-sozlesmesi">
+<h2>Satıcı (Esnaf) Sözleşmesi</h2>
+<h3>1. Taraflar</h3>
+<p>Bu sözleşme, Mahallem platformu ile platforma kayıt olan satıcı (esnaf) arasında yapılmaktadır.</p>
+
+<h3>2. Hizmet Tanımı</h3>
+<p>Mahallem, satıcıların ürün ve hizmetlerini kullanıcılarla buluşturan bir aracı platformdur.</p>
+
+<h3>3. Satıcı Yükümlülükleri</h3>
+<ul>
+  <li>Ürün ve hizmet bilgilerini doğru girmekle yükümlüdür.</li>
+  <li>Siparişleri zamanında hazırlamak ve teslim etmekle sorumludur.</li>
+  <li>Yasal mevzuata uygun hareket etmek zorundadır.</li>
+</ul>
+
+<h3>4. Veri Kullanımı ve KVKK</h3>
+<p>Satıcı, kullanıcıya ait kişisel verileri yalnızca siparişin gerçekleştirilmesi amacıyla kullanabilir. Bu veriler üçüncü kişilerle paylaşılamaz ve farklı amaçlarla kullanılamaz.</p>
+
+<h3>5. Sorumluluk</h3>
+<p>Satıcı, sunduğu ürün ve hizmetlerden doğrudan sorumludur. Mahallem yalnızca aracı hizmet sağlar.</p>
+
+<h3>6. Ödeme ve Komisyon</h3>
+<p>Platform, satıcıdan belirli bir komisyon talep etme hakkını saklı tutar.</p>
+
+<h3>7. Hesap Durumu</h3>
+<p>Kurallara aykırı davranan satıcıların hesapları askıya alınabilir veya kapatılabilir.</p>
+</div>
+
+<div class="card hidden" id="iletisim">
+<h2>İletişim</h2>
+<p>Her türlü soru, öneri ve talepleriniz için bizimle iletişime geçebilirsiniz.</p>
+<p><strong>Ad Soyad:</strong> Ferhat Şahin</p>
+<p><strong>E-posta:</strong> destek@mahallem.live</p>
+<p><strong>E-posta:</strong> info@mahallem.live</p>
+</div>
+
+</div>
+
+<script>
+  function toggleSection(sectionId) {
+    const sections = document.querySelectorAll('.card');
+    const targetSection = document.getElementById(sectionId);
+
+    sections.forEach(function (section) {
+      section.classList.add('hidden');
+    });
+
+    if (targetSection) {
+      targetSection.classList.remove('hidden');
+      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+</script>
+
+</body>
+</html>
